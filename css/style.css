@@ -1,0 +1,348 @@
+/* Fonts */
+/* poppin */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+/* Lato */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+:root {
+  --color-01: #FAB800;
+  --color-02: #01DEB2;
+  --color-11: #EFEFEF;
+  --color-12: #B5B3B4;
+
+  --popin: 'Poppins', sans-serif;
+  --lato: 'Lato', sans-serif;
+
+  --mar-xs: 13px;
+  --mar-md: 34px;
+  --mar-lg: 89px;
+
+  --pad-xs: 13px;
+  --pad-md: 34px;
+  --pad-lg: 89px;
+}
+/*  */
+
+*,*::before,*::after{
+  box-sizing: border-box!important;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  background-color: #ddd;
+}
+.container{
+  width: 800px;
+  max-width: 800px;
+  min-width: 800px;
+
+  height: 480px;
+  max-height: 480px;
+  min-height: 480px;
+
+  overflow: hidden;
+  
+  background-color: var(--color-01);
+}
+.container.v2{
+  background-color: #fff;
+}
+
+/* Css Index  */
+/* --------------- */
+.linkInicio{
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  transition: 0.6s;
+}
+.linkInicio img{
+  display: block;
+}
+
+.linkInicio:hover{
+  transform: scale(1.07);
+}
+
+
+
+/* --------------- */
+/* Fin Css Index  */
+
+/* --------------- */
+
+/*  Css v2 - vista Numero 2  */
+/* --------------- */
+.containerSecondary{
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.titleV2{
+  position: relative;
+  padding-top: var(--pad-md);
+
+  font-size: 6em;
+  color: var(--color-01);
+  background-color:transparent;
+}
+.titleV2 i{
+  position: absolute;
+  color: var(--color-02);
+  font-size: .5em;
+  left: 55px;
+  top: 0;
+  z-index: 15;
+}
+.textV2{
+  width: 60%;
+  margin-top: -34px;
+
+  color: var(--color-12);
+
+  font-size: 2.5em;
+  text-align: center;
+  font-family: var(--popin);
+}
+.linkV2{
+  background-color: var(--color-02);
+  color: #fff;
+
+  width: 90%;
+  text-align: center;
+  line-height: 3.2;
+  letter-spacing: 1.5px;
+
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: var(--popin);
+  text-transform: uppercase;
+}
+.linkV2 i{
+  font-size: 1.2em;
+}
+.linkV2:hover{
+  text-decoration: none;
+  color: #fff;
+}
+/* --------------- */
+/*  Fin Css v2 - vista Numero 2  */
+
+/* --------------- */
+
+/*  Fin Css v3 - vista Numero 3  */
+/* --------------- */
+.container.v3{
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+.containerbtnV3{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.containerbtnV3 .linkV3{
+  background-color: var(--color-01);
+
+  width: 40%;
+  line-height: 3;
+  overflow: hidden;
+
+  text-align: center;
+  font-size: 1.3em;
+  font-family: var(--popin);
+  color: #fff;
+
+  transition: .6s;
+}
+
+.containerbtnV3 .linkV3 i{
+  padding-right: var(--pad-xs);
+}
+
+.containerbtnV3 .linkV3:hover{
+  text-decoration: none;
+  font-size: 1.35em;
+  background-color: var(--color-12);
+}
+/* --------------- */
+/*  Fin Css v3 - vista Numero 3  */
+
+/* --------------- */
+
+/*   Css Menu   */
+/* --------------- */
+.containerMenu{
+  
+  width: 100%;
+  overflow: hidden;
+  
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  line-height: 2.5;
+  
+  
+  display: flex;
+  justify-content: space-between;
+  
+  
+  
+}
+.containerMenu .btnMenu{
+  width: 33.1%;
+  padding-top: var(--pad-xs);
+  padding-bottom: var(--pad-xs);
+  overflow: hidden;
+
+  background-color: var(--color-11);
+  color: var(--color-12);
+
+  text-align: center;
+  font-size: 1.3em;
+  font-family: var(--lato);
+  letter-spacing: 1px;
+  font-weight: 600;
+  
+  transition: .6s;
+  
+}
+.containerMenu .btnMenu i{
+  padding-right: var(--pad-xs);
+  font-size: 1.43em;
+}
+.containerMenu .btnMenu:hover{
+  text-decoration: none;
+  background-color: var(--color-12);
+  color: var(--color-11);
+}
+/* --------------- */
+/*  Fin Css menu  */
+
+/* --------------- */
+
+/*   Css Busqueda por DNI  */
+/* --------------- */
+.container.bdni{
+  background-color: #fff;
+  padding: 0;
+  position: relative;
+  overflow:hidden;
+}
+.container.bdni .header{
+  background-color: var(--color-01);
+  position: absolute;
+  overflow:hidden;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 25%;
+  max-height: 25%;
+  min-height: 25%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-family: var(--lato);
+  padding-top: var(--pad-xs);
+  padding-bottom: var(--pad-xs);
+
+}
+.container.bdni .header  i{
+  font-size: 3.5em;
+  color: #fff;
+  padding-right: var(--pad-xs);
+  padding-left: var(--pad-lg);
+}
+.container.bdni .header .titleDNI{
+  color:#fff;
+  font-size: 1.7em;
+  font-weight: 200;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 5px;
+}
+.container.bdni .header .titleDNI span{
+  font-size: 1.6em;
+  margin-top: -13px;
+  letter-spacing: normal;
+  font-weight: 500;
+}
+
+/* --------------- */
+.containerbusqueda{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: var(--popin);
+}
+
+.containerbusqueda .labelDNI{
+  width: 40%;
+  padding: 0;
+  margin: 0;
+}
+.containerbusqueda .labelDNI span{
+  margin-right: var(--pad-xs);
+  color: var(--color-12);
+}
+.containerbusqueda .labelDNI .inputDNI{
+  width: 80%;
+  line-height: 2;
+  padding: 0;
+  padding-left: var(--pad-xs);
+  color: var(--color-01);
+  margin: 0;
+  border: 1px solid var(--color-12);
+  background-color: transparent;
+  font-size: 1.3em;
+}
+.containerbusqueda .labelDNI .inputDNI:focus{
+  outline: none;
+}
+
+.containerbusqueda .btnDNI{
+  width: 40%;
+  background-color: var(--color-02);
+  line-height: 2;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.3em;
+  border:1px solid var(--color-02);
+}
+.containerbusqueda .btnDNI:hover{
+  text-decoration: none;
+}
+
+/* --------------- */
+/*  Fin Css Busqueda por DNI  */
+
