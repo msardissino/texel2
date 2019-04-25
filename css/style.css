@@ -276,7 +276,7 @@
   padding-right: var(--pad-xs);
   padding-left: var(--pad-lg);
 }
-.container.bdni .header .titleDNI{
+.container.bdni .header .titleHeader{
   color:#fff;
   font-size: 1.7em;
   font-weight: 200;
@@ -285,7 +285,7 @@
   flex-direction: column;
   letter-spacing: 5px;
 }
-.container.bdni .header .titleDNI span{
+.container.bdni .header .titleHeader span{
   font-size: 1.6em;
   margin-top: -13px;
   letter-spacing: normal;
@@ -346,4 +346,133 @@
 
 /* --------------- */
 /*  Fin Css Busqueda por DNI  */
+
+/* --------------- */
+
+/*  Css Nuevo paciente  */
+/* --------------- */
+.containerForm{
+  width: 100%;
+  height: 100%;
+  /* background-color: red; */
+  
+}
+.containerForm form{
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.containerForm form .boxInputs{
+  padding-top: 140px;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.containerForm form .boxInputs label{
+  padding-bottom: var(--pad-md);
+  font-family: var(--popin);
+  font-weight: 600;
+  overflow: hidden;
+}
+.containerForm form .boxInputs label span{
+  width: 20%;
+  text-align: left;
+  display:inline-block;  
+  margin-left: var(--pad-xs);
+  color: var(--color-12);
+  line-height: 2.5;
+}
+.containerForm form .boxInputs label input{
+  width: 70%;
+  float:right;
+  display: block;
+  margin-right: var(--pad-xs);
+  border:1px solid var(--color-12);
+  color: var(--color-01);
+  padding-left: var(--pad-xs);
+  line-height: 2.5;
+}
+.containerForm form .boxInputs label input:focus{
+  outline: none;
+}
+.containerForm form .boxInputs .dobleinput{
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+  justify-content: flex-start;
+}
+.containerForm form .boxInputs .dobleinput label{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.containerForm form .boxInputs .dobleinput label span{
+  width: 40%;
+  text-align: left;
+  display:inline-block;  
+  margin-left: var(--pad-xs);
+  color: var(--color-12);
+  line-height: 2.5;
+  /* background-color: green; */
+}
+.containerForm form .boxInputs .dobleinput label span.first{
+  margin-right: 18px;
+  /* background-color: red; */
+}
+.containerForm form .boxInputs .dobleinput label span.second{
+  margin-right: 18px;
+  /* background-color: red; */
+  text-align: right;
+}
+.containerForm form .boxInputs .dobleinput label input{
+  width: 40%;
+  float:right;
+  display: block;
+  margin-right: var(--pad-xs);
+  border:1px solid var(--color-12);
+  color: var(--color-01);
+  padding-left: var(--pad-xs);
+  line-height: 2.5;
+}
+.containerForm form .boxbtn{
+  width: 50%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+/* --------------- */
+.boxbtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+.boxbtn a.linkIngreso{
+  background-color: var(--color-02);
+  width: 90%;
+  line-height: 2.5;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 48px;
+  border:1px solid inherit;
+  font-weight: 600;
+  font-family: var(--popin);
+  letter-spacing: 2px;
+
+  transition:.6s;
+}
+.boxbtn a.linkIngreso:hover{
+  text-decoration: none;
+  background-color: var(--color-12);
+}
+/*  Fin Css Nuevo paciente  */
 
