@@ -633,12 +633,83 @@
   /*  Segunda row */
   
   .box.box2{
-    background-color:blue;
-    height: 100px;
+    height: 90px;
     margin-bottom: var(--mar-xs);
     margin-top: var(--mar-md);
     overflow: hidden;
     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box.box2 .ibox{
+    height: inherit;
+    
+  }
+
+  .box.box2 .ibox.ibox1{
+    width: 55%;
+    height: inherit;
+    border:1px solid var(--color-11);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box.box2 .ibox.ibox1 .btnLg{
+    background-color: var(--color-11);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box.box2 .ibox.ibox1 .btnLg:first-child{
+    margin-left: 5px;
+  }
+  .box.box2 .ibox.ibox1 .btnLg:nth-child(3){
+    margin-right: 5px;
+  }
+  .box.box2 .ibox.ibox1 .btnLg a{
+    display: block;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-12);
+    transition: .6s;
+  }
+  .box.box2 .ibox.ibox1 .btnLg a:hover{
+    background-color: var(--color-12);
+    color: var(--color-11);
+  }
+
+  .box.box2 .ibox.ibox1 p{
+    margin: 0;
+    color: var(--color-02);
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+  }
+  .box.box2 .ibox.ibox2{
+    background-color: orange;
+    width: 45%;
+    margin-left: 5%;
+    border: 1px solid var(--color-11);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .box.box2 .ibox.ibox2 .btnStart{
+    height: inherit;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   /* Fin Segunda row */
 /* --------------- */
