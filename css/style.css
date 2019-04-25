@@ -481,3 +481,166 @@
 }
 /*  Fin Css Nuevo paciente  */
 
+/* --------------- */
+
+/*   Css Control  */
+/* --------------- */
+/* Primer row */
+  .box{
+    /* background-color: red; */
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .box.box1{
+    /* background-color: green; */
+    height: 200px;
+    margin-bottom: var(--mar-xs);
+    margin-top: var(--mar-md);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+  /* --------------- */
+  .box.box1 .iBox.iBox1{
+    /* background-color: orange; */
+    width: 55%;
+    height: inherit;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  /* -----Internas de iBox1---------- */
+  .box.box1 .iBox.iBox1 .iibox1,
+  .box.box1 .iBox.iBox1 .iibox2{
+    /* background-color: crimson; */
+    width: 100%;
+    height: 90px;
+    border: 1px solid var(--color-11);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .box.box1 .iBox.iBox1 .iibox1 p,
+  .box.box1 .iBox.iBox1 .iibox2 p
+  {
+   font-weight: 600;
+   letter-spacing: 2px;
+   height: 50px;
+   line-height: 50px;
+   margin: 0;
+  }
+  .box.box1 .iBox.iBox1 .iibox1 p:first-child,
+  .box.box1 .iBox.iBox1 .iibox2 p:first-child{
+    color: var(--color-12);
+  }
+  .box.box1 .iBox.iBox1 .iibox1 p:nth-child(2),
+  .box.box1 .iBox.iBox1 .iibox2 p:nth-child(2){
+    color: var(--color-02);
+  }
+  .box.box1 .iBox.iBox1 .iibox1 div.btnSm,
+  .box.box1 .iBox.iBox1 .iibox2 div.btnSm{
+    background-color: var(--color-11);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-12);
+    border-radius:1.5px;
+    font-family: var(--popin);
+  }
+  .box.box1 .iBox.iBox1 .iibox1 div.btnSm a,
+  .box.box1 .iBox.iBox1 .iibox2 div.btnSm a{
+    color: var(--color-12);
+    display: block;
+
+    transition:.6s;
+  }
+  .box.box1 .iBox.iBox1 .iibox1 div.btnSm a:hover,
+  .box.box1 .iBox.iBox1 .iibox2 div.btnSm a:hover{
+    color: var(--color-11);
+    background-color: var(--color-12);
+  }
+  .box.box1 .iBox.iBox1 .iibox2{
+   
+  }
+  /* -----Fin Internas de iBox1---------- */
+
+  /* --------------- */
+
+  .box.box1 .iBox.iBox2{
+    /* background-color: coral; */
+    width: 45%;
+    margin-left: 5%;
+    height: inherit;
+    border:1px solid var(--color-11);
+  }
+  /* ----- Internas de iBox2---------- */
+  .box.box1 .iBox.iBox2 .iiBox21{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+  }
+  .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p{
+    margin: 0;
+    font-family: var(--popin);
+    letter-spacing: 2px;
+  }
+  .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p:first-child{
+    color: var(--color-12);
+  }
+  .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p:nth-child(2){
+    color: var(--color-02);
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+  /* --------------- */
+  .box.box1 .iBox.iBox2 .iiBox22{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .box.box1 .iBox.iBox2 .iiBox22 .indicadorCircular{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(10deg, rgb(25, 96, 218) 57% , rgba(25, 96, 218,.25));
+    border-radius:50px;
+  }
+  .box.box1 .iBox.iBox2 .iiBox22 p{
+    margin: 0;
+    color: var(--color-12);
+    font-family: var(--popin);
+    letter-spacing: 2px;
+  }
+
+
+  /* -----Fin Internas de iBox2---------- */
+  /* Fin Primer row */
+  /* --------------- */
+  /*  Segunda row */
+  
+  .box.box2{
+    background-color:blue;
+    height: 100px;
+    margin-bottom: var(--mar-xs);
+    margin-top: var(--mar-md);
+    overflow: hidden;
+    
+  }
+  /* Fin Segunda row */
+/* --------------- */
+/*  Fin Css Control  */
+
