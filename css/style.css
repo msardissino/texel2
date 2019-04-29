@@ -768,8 +768,8 @@
   /* -------ASIDE-------- */
 
   .containerAjustes .asideAjustes{
-    min-width: 33.3%;
-    max-width: 33.3%;
+    min-width: 33%;
+    max-width: 33%;
     height: 100%;
     border-right: 1px solid var(--color-11);
 
