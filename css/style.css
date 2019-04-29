@@ -3,15 +3,28 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 /* Lato */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+/* Montserrat */
+@font-face{
+  font-family: 'Montserrat', sans-serif;
+  src: url("../font/Montserrat-Black.ttf"),
+       url("../font/Montserrat-Bold.ttf"),
+       url("../font/Montserrat-SemiBold.ttf"),
+       url("../font/Montserrat-ExtraBold.ttf"),
+       url("../font/Montserrat-Light.ttf"),
+       url("../font/Montserrat-ExtraLight.ttf"),
+       url("../font/Montserrat-Regular.ttf");
+}
+
 
 :root {
-  --color-01: #FAB800;
-  --color-02: #01DEB2;
+  --color-01: #e9b80c;
+  --color-02: #60ddb2;
   --color-11: #EFEFEF;
   --color-12: #B5B3B4;
 
   --popin: 'Poppins', sans-serif;
   --lato: 'Lato', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
 
   --mar-xs: 13px;
   --mar-md: 34px;
@@ -48,15 +61,24 @@
   min-height: 480px;
 
   overflow: hidden;
-  
-  background-color: var(--color-01);
+
 }
+
 .container.v2{
   background-color: #fff;
+  background-image: url('../img/background-general.jpg');
+  background-position: center center;
+  background-repeat: no-repeat
 }
 
 /* Css Index  */
 /* --------------- */
+.container.index{
+  background-color: var(--color-01);
+  background-image: url('../img/intro-background.jpg');
+  background-position: center center;
+  background-repeat: no-repeat
+}
 .linkInicio{
   background-color: transparent;
   display: flex;
@@ -93,22 +115,6 @@
   align-items: center;
   justify-content: space-around;
 }
-.titleV2{
-  position: relative;
-  padding-top: var(--pad-md);
-
-  font-size: 6em;
-  color: var(--color-01);
-  background-color:transparent;
-}
-.titleV2 i{
-  position: absolute;
-  color: var(--color-02);
-  font-size: .5em;
-  left: 55px;
-  top: 0;
-  z-index: 15;
-}
 .textV2{
   width: 60%;
   margin-top: -34px;
@@ -117,7 +123,7 @@
 
   font-size: 2.5em;
   text-align: center;
-  font-family: var(--popin);
+  font-family: var(--montserrat);
 }
 .linkV2{
   background-color: var(--color-02);
@@ -132,13 +138,16 @@
   font-weight: 600;
   font-family: var(--popin);
   text-transform: uppercase;
-}
+
+  transition:.4s;
+ }
 .linkV2 i{
   font-size: 1.2em;
 }
 .linkV2:hover{
   text-decoration: none;
   color: #fff;
+  background-color: var(--color-12);
 }
 /* --------------- */
 /*  Fin Css v2 - vista Numero 2  */
@@ -148,7 +157,9 @@
 /*  Fin Css v3 - vista Numero 3  */
 /* --------------- */
 .container.v3{
-  background-color: #fff;
+  background-image: url('../img/background-general.jpg');
+  background-position: center center;
+  background-repeat: no-repeat
   width: 100%;
   padding: 0;
   position: relative;
@@ -171,10 +182,10 @@
 
   text-align: center;
   font-size: 1.3em;
-  font-family: var(--popin);
+  font-family: var(--montserrat);
   color: #fff;
 
-  transition: .6s;
+  transition: .4s;
 }
 
 .containerbtnV3 .linkV3 i{
@@ -183,7 +194,6 @@
 
 .containerbtnV3 .linkV3:hover{
   text-decoration: none;
-  font-size: 1.35em;
   background-color: var(--color-12);
 }
 /* --------------- */
@@ -203,6 +213,7 @@
   left: 0;
   padding: 0;
   line-height: 2.5;
+  z-index: 5000;
   
   
   display: flex;
@@ -222,11 +233,11 @@
 
   text-align: center;
   font-size: 1.3em;
-  font-family: var(--lato);
+  font-family: var(--montserrat);
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 500;
   
-  transition: .6s;
+  transition: .4s;
   
 }
 .containerMenu .btnMenu i{
@@ -235,8 +246,7 @@
 }
 .containerMenu .btnMenu:hover{
   text-decoration: none;
-  background-color: var(--color-12);
-  color: var(--color-11);
+  background-color: rgba(0,0,0,.15);
 }
 /* --------------- */
 /*  Fin Css menu  */
@@ -246,48 +256,50 @@
 /*   Css Busqueda por DNI  */
 /* --------------- */
 .container.bdni{
-  background-color: #fff;
+  background-image: url('../img/background-general.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
   padding: 0;
   position: relative;
   overflow:hidden;
 }
 .container.bdni .header{
   background-color: var(--color-01);
+  background-image: url('../img/header.jpg');
+  background-position: center center;
   position: absolute;
   overflow:hidden;
   top: 0;
   left: 0;
 
   width: 100%;
-  height: 25%;
   max-height: 25%;
   min-height: 25%;
   padding: 0;
   display: flex;
   align-items: center;
-  font-family: var(--lato);
+  font-family: var(--montserrat);
   padding-top: var(--pad-xs);
   padding-bottom: var(--pad-xs);
 
 }
-.container.bdni .header  i{
-  font-size: 3.5em;
-  color: #fff;
-  padding-right: var(--pad-xs);
+.container.bdni .header img{
   padding-left: var(--pad-lg);
+  padding-right: var(--pad-xs);
 }
 .container.bdni .header .titleHeader{
   color:#fff;
-  font-size: 1.7em;
-  font-weight: 200;
+  font-size: 1.3em;
+  font-weight: 100;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
+  margin-top: 8px;
 }
 .container.bdni .header .titleHeader span{
-  font-size: 1.6em;
-  margin-top: -13px;
+  font-size: 1.5em;
+  margin-top: -8px;
   letter-spacing: normal;
   font-weight: 500;
 }
@@ -302,7 +314,7 @@
   align-items: center;
   justify-content: space-around;
 
-  font-family: var(--popin);
+  font-family: var(--montserrat);
 }
 
 .containerbusqueda .labelDNI{
@@ -339,13 +351,14 @@
   font-size: 1.3em;
   border:1px solid var(--color-02);
   font-weight: 600;
+  font-family: var(--montserrat);
 
   transition: .6s;
 }
 .containerbusqueda .btnDNI:hover{
   text-decoration: none;
   background-color: var(--color-12);
-  border-color: inherit;
+  border:1px solid var(--color-12);
 }
 
 /* --------------- */
@@ -358,13 +371,11 @@
 .containerForm{
   width: 100%;
   height: 100%;
-  /* background-color: red; */
   
 }
 .containerForm form{
   width: 100%;
   height: 100%;
-  /* background-color: green; */
 
   display: flex;
   justify-content: space-between;
@@ -382,7 +393,7 @@
 }
 .containerForm form .boxInputs label{
   padding-bottom: var(--pad-md);
-  font-family: var(--popin);
+  font-family: var(--montserrat);
   font-weight: 600;
   overflow: hidden;
 }
@@ -412,7 +423,6 @@
   /* background-color: red; */
   display: flex;
   justify-content: flex-start;
-  justify-content: flex-start;
 }
 .containerForm form .boxInputs .dobleinput label{
   width: 50%;
@@ -426,15 +436,12 @@
   margin-left: var(--pad-xs);
   color: var(--color-12);
   line-height: 2.5;
-  /* background-color: green; */
 }
 .containerForm form .boxInputs .dobleinput label span.first{
   margin-right: 18px;
-  /* background-color: red; */
 }
 .containerForm form .boxInputs .dobleinput label span.second{
   margin-right: 18px;
-  /* background-color: red; */
   text-align: right;
 }
 .containerForm form .boxInputs .dobleinput label input{
@@ -450,7 +457,6 @@
 .containerForm form .boxbtn{
   width: 50%;
   height: 100%;
-  /* background-color: blueviolet; */
 }
 /* --------------- */
 .boxbtn{
@@ -469,15 +475,15 @@
   margin-bottom: 48px;
   border:1px solid var(--color-02);
   font-weight: 600;
-  font-family: var(--popin);
+  font-family: var(--montserrat);
   letter-spacing: 2px;
 
-  transition:.6s;
+  transition:.4s;
 }
 .boxbtn a.linkIngreso:hover{
   text-decoration: none;
   background-color: var(--color-12);
-  border-color: inherit;
+  border:1px solid var(--color-12);
 }
 /*  Fin Css Nuevo paciente  */
 
@@ -487,7 +493,6 @@
 /* --------------- */
 /* Primer row */
   .box{
-    /* background-color: red; */
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -495,7 +500,6 @@
   }
 
   .box.box1{
-    /* background-color: green; */
     height: 200px;
     margin-bottom: var(--mar-xs);
     margin-top: var(--mar-md);
@@ -509,7 +513,6 @@
   }
   /* --------------- */
   .box.box1 .iBox.iBox1{
-    /* background-color: orange; */
     width: 55%;
     height: inherit;
     
@@ -521,7 +524,6 @@
   /* -----Internas de iBox1---------- */
   .box.box1 .iBox.iBox1 .iibox1,
   .box.box1 .iBox.iBox1 .iibox2{
-    /* background-color: crimson; */
     width: 100%;
     height: 90px;
     border: 1px solid var(--color-11);
@@ -558,19 +560,22 @@
     font-size: 2em;
     color: var(--color-12);
     border-radius:1.5px;
-    font-family: var(--popin);
+    font-family: var(--montserrat);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .box.box1 .iBox.iBox1 .iibox1 div.btnSm a,
   .box.box1 .iBox.iBox1 .iibox2 div.btnSm a{
     color: var(--color-12);
     display: block;
 
-    transition:.6s;
+    transition:.4s;
   }
   .box.box1 .iBox.iBox1 .iibox1 div.btnSm a:hover,
   .box.box1 .iBox.iBox1 .iibox2 div.btnSm a:hover{
     color: var(--color-11);
-    background-color: var(--color-12);
+    background-color: rgba(0,0,0,.15);
   }
   .box.box1 .iBox.iBox1 .iibox2{
    
@@ -595,7 +600,7 @@
   }
   .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p{
     margin: 0;
-    font-family: var(--popin);
+    font-family: var(--montserrat);
     letter-spacing: 2px;
   }
   .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p:first-child{
@@ -613,16 +618,11 @@
     align-items: center;
   }
 
-  .box.box1 .iBox.iBox2 .iiBox22 .indicadorCircular{
-    height: 50px;
-    width: 50px;
-    background: linear-gradient(10deg, rgb(25, 96, 218) 57% , rgba(25, 96, 218,.25));
-    border-radius:50px;
-  }
+ 
   .box.box1 .iBox.iBox2 .iiBox22 p{
     margin: 0;
     color: var(--color-12);
-    font-family: var(--popin);
+    font-family: var(--montserrat);
     letter-spacing: 2px;
   }
 
@@ -674,7 +674,9 @@
     margin-right: 5px;
   }
   .box.box2 .ibox.ibox1 .btnLg a{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: inherit;
     text-align: center;
@@ -683,8 +685,7 @@
     transition: .6s;
   }
   .box.box2 .ibox.ibox1 .btnLg a:hover{
-    background-color: var(--color-12);
-    color: var(--color-11);
+    background-color: rgba(0,0,0,.15);
   }
 
   .box.box2 .ibox.ibox1 p{
@@ -742,4 +743,275 @@
   /* Fin Segunda row */
 /* --------------- */
 /*  Fin Css Control  */
+
+/* --------------- */
+
+  /*  Css Page Ajustes */
+/* --------------- */
+  .header .titleHeader.ajustes{
+    font-weight: 100;
+    letter-spacing: normal;
+
+  }
+  .header .titleHeader.ajustes span{
+  }
+
+  .containerAjustes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  /* --------------- */
+  /* -------ASIDE-------- */
+
+  .containerAjustes .asideAjustes{
+    min-width: 33.3%;
+    max-width: 33.3%;
+    height: 100%;
+    border-right: 1px solid var(--color-11);
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .containerAjustes .asideAjustes ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .containerAjustes .asideAjustes ul li{
+    width: 100%;
+    line-height: 2.7;
+    padding-left: var(--pad-lg);
+    list-style: none;
+    position: relative;
+  }
+  
+  .containerAjustes .asideAjustes ul li a{
+    text-decoration: none;
+    display: block;
+    color: var(--color-12);
+    font-family: var(--montserrat);
+    letter-spacing: 2px;
+    line-height: 2.7;
+    width: 100%;
+    height: 100%;
+  }
+  .containerAjustes .asideAjustes ul li a:before{
+    content: '>';
+    color: var(--color-01);
+    position: absolute;
+    left: 60px;
+    line-height: 2.7;
+    height: 100%;
+    display: none;
+  }
+  .containerAjustes .asideAjustes ul li a:focus:before{
+    display: block;
+  }
+  .containerAjustes .asideAjustes ul li a:focus{
+    color: var(--color-01);
+  }
+  
+
+  /* -------FIN ASIDE-------- */
+  /* --------------- */
+  .containerAjustes .boxOpciones{
+    min-width: 65%;
+    max-width: 65%;
+    height: 100%;
+    margin-top: 30%;
+    
+    overflow: auto;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .containerAjustes .boxOpciones .boxInputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--mar-md);
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    
+
+  }
+  .containerAjustes .boxOpciones .boxInputs label{
+    width: 100%;
+    padding-left: var(--pad-md);
+    line-height: 2.5;
+    color: var(--color-12);
+    font-family: var(--montserrat);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+  .containerAjustes .boxOpciones .boxInputs label:first-child{
+    margin-bottom: var(--mar-xs);
+  }
+  .containerAjustes .boxOpciones .boxInputs label input{
+    width: 60%;
+    padding-left: var(--pad-xs);
+    color: var(--color-01);
+    border: 1px solid var(--color-12);
+    background-color: transparent;
+    outline: none;
+  }
+/* --------------- */
+.containerAjustes .boxOpciones .boxChecks{
+  width: 100%;
+  padding-left: var(--pad-md);
+  line-height: 2.5;
+  color: var(--color-12);
+  font-family: var(--montserrat);
+  letter-spacing: 1.5px;
+  margin-top: var(--mar-xs);
+}
+.containerAjustes .boxOpciones .boxChecks label{
+  cursor: pointer;
+  line-height: 2.5;
+  display: flex;
+  align-items: center;
+}
+.containerAjustes .boxOpciones .boxChecks label:after{
+  content: '';
+  color: var(--color-02);
+  font-weight: 600;
+  font-size: 1.2em;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-left: 13px;
+  border:1px solid var(--color-12);
+  text-align: center;
+  background-color: transparent;
+
+}
+
+.containerAjustes .boxOpciones .boxChecks input[type="checkbox"]{
+  display: none;
+}
+.containerAjustes .boxOpciones .boxChecks input[type="checkbox"]:checked + label:after{
+  content: '✓';
+  line-height: 30px;
+}
+/* --------------- */
+/*  Fin Css Page Ajustes  */
+
+/* --------------- */
+
+/*  Css Page Contadores  */
+/* --------------- */
+  .contDisparos .boxContadores{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .contDisparos .boxContadores .Col1,
+  .contDisparos .boxContadores .Col2{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 34%;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contDisparos .boxContadores .Col1{
+    /* background-color: blue; */
+
+  }
+  .contDisparos .boxContadores .Col2{
+    /* background-color: green; */
+  }
+  
+
+/* --------------- */
+.contDisparos .boxContadores .Col1 .iBox,
+.contDisparos .boxContadores .Col2 .iBox{
+  border:1px solid var(--color-12);
+  margin: 0 auto;
+  margin-top: var(--mar-xs);
+  padding: 0;
+}
+.contDisparos .boxContadores .Col1 .iBox,
+.contDisparos .boxContadores .Col1 .iBox .iiBox,
+.contDisparos .boxContadores .Col2 .iBox,
+.contDisparos .boxContadores .Col2 .iBox .iiBox{
+  width: 90%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contDisparos .boxContadores .Col1 .iBox .iiBox,
+.contDisparos .boxContadores .Col2 .iBox .iiBox{
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  color: var(--color-12);
+  font-weight: 600;
+}
+.contDisparos .boxContadores .Col1 .iBox .iiBox p,
+.contDisparos .boxContadores .Col2 .iBox .iiBox p{
+  margin: 0;
+}
+.contDisparos .boxContadores .Col1 .iBox .iiBox .iBoxNumber,
+.contDisparos .boxContadores .Col2 .iBox .iiBox .iBoxNumber{
+
+border-left: 1px solid var(--color-12);
+text-align: right;
+width: 80px;
+}
+
+/* ---------------- */
+
+.contDisparos .boxContadores .Col2 .btnContadores
+{
+  background-color: var(--color-01);
+  border:1px solid var(--color-01);
+  margin: 0 auto;
+  margin-top: var(--mar-xs);
+  padding: 0;
+
+  width: 90%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+
+  transition: .4s;
+}
+.contDisparos .boxContadores .Col2 .btnContadores:hover{
+  border-color: var(--color-12);
+  background-color: var(--color-12);
+}
+/* --------------- */
+/*  Fin Css Page Contadores  */
 
