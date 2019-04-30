@@ -210,12 +210,13 @@
   
   width: 100%;
   overflow: hidden;
+  height: 100px;
+  line-height: 100px;
   
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 0;
-  line-height: 2.5;
   z-index: 5000;
   
   
@@ -227,8 +228,6 @@
 }
 .containerMenu .btnMenu{
   width: 33.1%;
-  padding-top: var(--pad-xs);
-  padding-bottom: var(--pad-xs);
   overflow: hidden;
 
   background-color: var(--color-11);
