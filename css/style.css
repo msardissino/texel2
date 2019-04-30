@@ -5,26 +5,26 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 /* Montserrat */
 @font-face{
-  font-family: 'Montserrat', sans-serif;
-  src: url("../font/Montserrat-Black.ttf"),
+  font-family: Montserrat;
+  src: url("../font/Montserrat-Regular.ttf"),
        url("../font/Montserrat-Bold.ttf"),
        url("../font/Montserrat-SemiBold.ttf"),
        url("../font/Montserrat-ExtraBold.ttf"),
        url("../font/Montserrat-Light.ttf"),
        url("../font/Montserrat-ExtraLight.ttf"),
-       url("../font/Montserrat-Regular.ttf");
+       url("../font/Montserrat-Black.ttf");
 }
 
 
 :root {
   --color-01: #e9b80c;
-  --color-02: #60ddb2;
+  --color-02: #01DEB2;
   --color-11: #EFEFEF;
   --color-12: #B5B3B4;
 
   --popin: 'Poppins', sans-serif;
   --lato: 'Lato', sans-serif;
-  --montserrat: 'Montserrat', sans-serif;
+  --montserrat: Montserrat , serif;
 
   --mar-xs: 13px;
   --mar-md: 34px;
@@ -40,6 +40,7 @@
   box-sizing: border-box!important;
   margin: 0;
   padding: 0;
+  font-family: var(--Montserrat);
 }
 .container-fluid{
   height: 100vh;
@@ -122,6 +123,7 @@
   color: var(--color-12);
 
   font-size: 2.5em;
+  font-weight: 600;
   text-align: center;
   font-family: var(--montserrat);
 }
@@ -159,7 +161,7 @@
 .container.v3{
   background-image: url('../img/background-general.jpg');
   background-position: center center;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
   width: 100%;
   padding: 0;
   position: relative;
@@ -177,20 +179,21 @@
   background-color: var(--color-01);
 
   width: 40%;
-  line-height: 3;
+  height: 90px;
+  line-height: 90px;
   overflow: hidden;
 
   text-align: center;
   font-size: 1.3em;
   font-family: var(--montserrat);
   color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
   transition: .4s;
 }
 
-.containerbtnV3 .linkV3 i{
-  padding-right: var(--pad-xs);
-}
 
 .containerbtnV3 .linkV3:hover{
   text-decoration: none;
@@ -235,15 +238,12 @@
   font-size: 1.3em;
   font-family: var(--montserrat);
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 600;
   
   transition: .4s;
   
 }
-.containerMenu .btnMenu i{
-  padding-right: var(--pad-xs);
-  font-size: 1.43em;
-}
+
 .containerMenu .btnMenu:hover{
   text-decoration: none;
   background-color: rgba(0,0,0,.15);
@@ -294,14 +294,16 @@
   line-height: 1.5;
   display: flex;
   flex-direction: column;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   margin-top: 8px;
+  font-family: var(--montserrat);
+  text-transform: uppercase;
 }
 .container.bdni .header .titleHeader span{
   font-size: 1.5em;
   margin-top: -8px;
-  letter-spacing: normal;
-  font-weight: 500;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
 /* --------------- */
@@ -313,6 +315,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: -50px;
 
   font-family: var(--montserrat);
 }
@@ -321,19 +324,26 @@
   width: 40%;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .containerbusqueda .labelDNI span{
   margin-right: var(--pad-xs);
   color: var(--color-12);
+  font-weight: 600;
+  font-size: 1.3em;
+  color: var(--color-11);
 }
 .containerbusqueda .labelDNI .inputDNI{
   width: 80%;
-  line-height: 2;
+  height: 55px;
+  line-height: 55px;
   padding: 0;
   padding-left: var(--pad-xs);
   color: var(--color-01);
   margin: 0;
-  border: 1px solid var(--color-12);
+  border: 1px solid var(--color-11);
   background-color: transparent;
   font-size: 1.3em;
 }
@@ -342,9 +352,10 @@
 }
 
 .containerbusqueda .btnDNI{
-  width: 40%;
+  width: 50%;
   background-color: var(--color-02);
-  line-height: 2;
+  height: 55px;
+  line-height: 55px;
   text-align: center;
   color: #fff;
   letter-spacing: 2px;
@@ -492,12 +503,20 @@
 /*   Css Control  */
 /* --------------- */
 /* Primer row */
+.container.control{
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
   .box{
     width: 90%;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
   }
+  
 
   .box.box1{
     height: 200px;
@@ -550,6 +569,11 @@
   .box.box1 .iBox.iBox1 .iibox2 p:nth-child(2){
     color: var(--color-02);
   }
+  .box.box1 .iBox.iBox1 .iibox1 p.number,
+  .box.box1 .iBox.iBox1 .iibox2 p.number
+  {
+    font-weight: 800;
+  }
   .box.box1 .iBox.iBox1 .iibox1 div.btnSm,
   .box.box1 .iBox.iBox1 .iibox2 div.btnSm{
     background-color: var(--color-11);
@@ -569,6 +593,7 @@
   .box.box1 .iBox.iBox1 .iibox2 div.btnSm a{
     color: var(--color-12);
     display: block;
+    width: 100%;
 
     transition:.4s;
   }
@@ -602,20 +627,22 @@
     margin: 0;
     font-family: var(--montserrat);
     letter-spacing: 2px;
+    font-weight: 600;
   }
   .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p:first-child{
     color: var(--color-12);
   }
   .box.box1 .iBox.iBox2 .iiBox21 .ii21TextBox p:nth-child(2){
     color: var(--color-02);
-    font-size: 1.1em;
-    font-weight: 500;
+    font-size: 1.3em;
+    font-weight: 800;
   }
   /* --------------- */
   .box.box1 .iBox.iBox2 .iiBox22{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: var(--mar-xs);
   }
 
  
@@ -635,7 +662,7 @@
   .box.box2{
     height: 90px;
     margin-bottom: var(--mar-xs);
-    margin-top: var(--mar-md);
+    margin-top: 23px;
     overflow: hidden;
     
     display: flex;
@@ -691,9 +718,13 @@
   .box.box2 .ibox.ibox1 p{
     margin: 0;
     color: var(--color-02);
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 2px;
-    font-size: 1.3em;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+  }
+  .box.box2 .ibox.ibox1 p span{
+    font-weight: normal;
   }
   .box.box2 .ibox.ibox2{
     /* background-color: orange; */
@@ -803,6 +834,7 @@
     font-family: var(--montserrat);
     letter-spacing: 2px;
     line-height: 2.7;
+    font-weight: 600;
     width: 100%;
     height: 100%;
   }
@@ -857,6 +889,13 @@
     font-family: var(--montserrat);
     letter-spacing: 1.5px;
     cursor: pointer;
+
+    display: flex;
+    justify-content: flex-start;
+  }
+  .containerAjustes .boxOpciones .boxInputs label span{
+    display: block;
+    width: 100px;
   }
   .containerAjustes .boxOpciones .boxInputs label:first-child{
     margin-bottom: var(--mar-xs);
@@ -877,13 +916,15 @@
   color: var(--color-12);
   font-family: var(--montserrat);
   letter-spacing: 1.5px;
-  margin-top: var(--mar-xs);
 }
 .containerAjustes .boxOpciones .boxChecks label{
   cursor: pointer;
   line-height: 2.5;
   display: flex;
   align-items: center;
+}
+.containerAjustes .boxOpciones .boxChecks label span{
+  width: 100px;
 }
 .containerAjustes .boxOpciones .boxChecks label:after{
   content: '';
@@ -893,7 +934,6 @@
   height: 30px;
   width: 30px;
   line-height: 30px;
-  margin-left: 13px;
   border:1px solid var(--color-12);
   text-align: center;
   background-color: transparent;
@@ -962,7 +1002,7 @@
 }
 .contDisparos .boxContadores .Col1 .iBox .iiBox,
 .contDisparos .boxContadores .Col2 .iBox .iiBox{
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 80%;
   width: 90%;
